@@ -1,0 +1,189 @@
+
+$primaryColor: #f2545f;
+$secondaryColor: #090707;
+$grayColor: #707070;
+
+.navbar{
+    margin: 0 auto;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    ul{
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        li{
+            padding: 20px;
+        }
+    }
+}
+
+.overall{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    .overview{
+        background-color: rgb(158, 212, 248);
+        width: 100%;
+        padding: 30px;
+         text-align: center;
+        .iconContainer{
+            margin: 10px;
+            .icon{
+                color: rgb(211, 46, 46); 
+                font-size: 25px;
+                width: 25px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+/*====================================header =========================*/
+.headerWrapper{
+    height: 100vh; 
+    width: 100vw; 
+    background: url('../public/img/bg.jpg') no-repeat center center;
+    margin: 0;
+    padding-top:20%;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+   
+
+    h2{
+        font-size: 40px;
+        //padding: 20% 0;
+        color: $primaryColor;
+    }
+    h3{
+        color: blue; 
+        font-size: 34px;
+        padding-top: 10px;
+       
+    }
+    .Btn1{
+        margin-right: 10px;
+        color: blue; 
+        font-size:40px;
+    }
+
+    .headerBtn1{
+        margin-right: 10px;
+        transition: all 0.6s ease; 
+        &:hover{
+            background-color: transparent;
+            color: blue; 
+        }
+    }
+    
+}
+/*======================================================================*/
+.speaker_wrapper{
+    text-align: center;
+    background-color: lightseagreen;
+    h1{
+        font-size: 30px;
+        padding: 20px ; 
+        color: #fff;
+    }
+    .creativeSpeakers{
+        width: 100%;
+        margin: 0; 
+        padding: 20px;
+        .creativeSpeakers{
+            width: 100%;
+            margin: 0; 
+            padding: 20px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            .speakerContent{
+                background-color: #fff; 
+                padding: 20px; 
+                margin: 10px; 
+                
+            }
+        }
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        .speakerContent{
+            background-color: #fff; 
+            padding: 20px; 
+            margin: 10px; 
+            
+        }
+    }
+}
+
+
+/*========================================*/
+.programsWrapper{
+    display: flex; 
+    
+    
+    padding: 30px 50px;
+    width: 100%;
+    .programImage{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        padding: 30px;
+        margin-right: 40px;
+      
+       
+    }
+    .programContent{
+        margin-left: 30px;
+        padding-left:50px;
+        
+        .iconWrapper{
+            display: flex;
+            gap: 20px;
+        }
+        .programHeading{
+            font-size: 25px;
+            color: red;
+        }
+    }
+    
+}
+
+/*=================================== sponsors ================================*/
+.sponsorWrapper{
+    background-color: lightpink;
+    width: 100%;
+    padding: 50px 100px;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+/*========================= about us =======================================*/
+.aboutUsWrapper{
+    padding: 50px 40px ;
+    display: flex;
+    gap: 30px;
+    align-content: center;
+    .aboutUsContent{
+      
+        p{
+            color: grey;
+        }
+    }
+   .imgDiv{
+   
+       Image{
+         
+       }
+   
+    }
+}
