@@ -12,7 +12,7 @@ type Props = {
 export default function OverviewSection({}: Props): ReactElement {
     return (
         <Fragment>
-            <div className={styles.overall}>
+            <div className={styles.overViewSection}>
                 <OverView 
                 icon={faUserGroup}
                 title={`First Heading`} content={`wait  - compiling /speakers...

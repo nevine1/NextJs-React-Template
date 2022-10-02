@@ -2,6 +2,7 @@
 $primaryColor: #f2545f;
 $secondaryColor: #090707;
 $grayColor: #707070;
+$blackColor: #222;
 
 .navbar{
     margin: 0 auto;
@@ -20,12 +21,13 @@ $grayColor: #707070;
     }
 }
 
-.overall{
+.overViewSection{
     display: flex;
     flex-direction: row;
     align-items:center;
     .overview{
-        background-color: rgb(158, 212, 248);
+        background-color: $blackColor;
+        color: #fff;
         width: 100%;
         padding: 30px;
          text-align: center;
@@ -83,11 +85,16 @@ $grayColor: #707070;
 /*======================================================================*/
 .speaker_wrapper{
     text-align: center;
-    background-color: lightseagreen;
+    background-color: hsla(0, 5%, 92%, 0.616);
+    padding-top: 30px;
+    padding: 0 50px;
     h1{
-        font-size: 30px;
-        padding: 20px ; 
-        color: #fff;
+        font-size: 35px;
+        //padding: 20px ; 
+        color: rgba(0, 0, 0, 0.767);
+        span{
+            color: red;
+        }
     }
     .creativeSpeakers{
         width: 100%;
@@ -127,8 +134,6 @@ $grayColor: #707070;
 /*========================================*/
 .programsWrapper{
     display: flex; 
-    
-    
     padding: 30px 50px;
     width: 100%;
     .programImage{
