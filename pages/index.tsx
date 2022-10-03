@@ -7,6 +7,7 @@ import Header from '../components/header'
 import About from '../components/about'
 import OverviewSection from '../components/overView/OverViewSection'
 import CreativeSpeakerWrapper from '../components/creativeSpeaker/CreativeSpeakerWrapper';
+import OurProgramsWrapper from '../components/ourPrograms/OurProgramsWrapper'
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       <About />
       <OverviewSection />
       <CreativeSpeakerWrapper/>
+      <OurProgramsWrapper />
     </Fragment>
     
   )

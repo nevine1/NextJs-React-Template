@@ -17,12 +17,12 @@ interface Props {
     description: string;
 }
 
-export default function OurProgram({id, roomNumber, name, title, time, img, description}: Props): ReactElement {
+export default function Program({id, roomNumber, name, title, time, img, description}: Props): ReactElement {
     return (
         <Fragment>
-            <div className={styles.programsWrapper}>
+            <div className={styles.programCount}>
                 <div >
-                <Image loader={()=>img} src={img} width={170} height={170} alt="image 1" className={styles.programImage}/>
+                    <Image src={img} loader={() =>img}   width={170} height={170} alt="image 1" className={styles.programImage}/>
                 </div>
                 <div className={styles.programsContent}>
                 <div className={styles.iconWrapper}>

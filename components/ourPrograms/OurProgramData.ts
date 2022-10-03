@@ -1,10 +1,3 @@
-/* 
-import React, {Fragment} from 'react'; 
-type Props = {
-    id: number;
-    name: string;
-    title: string;
-} */
 
 export const OurProgramData = [
     { 
