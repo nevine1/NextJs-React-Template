@@ -136,6 +136,37 @@ $blackColor: #222;
         color: grey;
         padding: 10px 0 15px 0;
         }
+    .tabs{
+        .tabsWrapper{
+            margin: 5px 0; 
+            background-color:pink;
+            padding: 5px 0; 
+            display: flex; 
+            gap: 30px;
+            .tabSapn{
+                cursor: pointer; 
+                color: #444;
+            }
+        }
+        .line{ 
+            height: 1px; 
+            width: 100%;
+            
+        }
+        .programsMainContent{
+            margin: 20px 0;
+            display: flex;
+            .programImgDiv{
+                padding-right: 20px;
+                .programImage{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+
+                }
+            }
+        }
+    }
    
 }
 

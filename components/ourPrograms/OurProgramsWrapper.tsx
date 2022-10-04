@@ -5,7 +5,7 @@ import Image1 from '../../public/img/1.jpg'
 import {AiOutlineClockCircle} from 'react-icons/ai'
 import {BiMap} from 'react-icons/bi'
 import {faClock} from '@fortawesome/free-solid-svg-icons'
-import OurProgramsContent from './OurProgramsContent';
+//import OurProgramsContent from './OurProgramsContent';
 import Tabs from './Tabs'
 
 export default function OurProgramsWrapper({}: Props) {
@@ -20,8 +20,8 @@ export default function OurProgramsWrapper({}: Props) {
         <div className={styles.tabs}>
           <Tabs/>
         </div>
-        
-        {/* <OurProgramsContent/> */}
+
+        {/*  <Tabs/>  */}
         
       </div>
        

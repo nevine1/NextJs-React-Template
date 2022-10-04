@@ -20,19 +20,19 @@ interface Props {
 export default function Program({id, roomNumber, name, title, time, img, description}: Props): ReactElement {
     return (
         <Fragment>
-            <div className={styles.programCount}>
-                <div >
-                    <Image src={img}     alt="image 1" className={styles.programImage}/>
+            <div className={styles.programsMainContent}>
+                <div className={styles.programImgDiv}>
+                    <Image src={img} width={150} height={150}     alt="image 1" className={styles.programImage}/>
                 </div>
                 <div className={styles.programsContent}>
-                <div className={styles.iconWrapper}>
-                    <span>
-                    <AiOutlineClockCircle /> {time}
-                    </span>
-                    <span>
-                    <BiMap/>Room {roomNumber}
-                    </span>
-                </div>
+                    <div className={styles.iconWrapper}>
+                        <span>
+                            <AiOutlineClockCircle /> {time}
+                        </span>
+                        <span>
+                            <BiMap/>Room {roomNumber}
+                        </span>
+                    </div>
                     <h2 className={styles.programHeading}>{title} </h2>
                     <span>{name}</span>
                     <p>{description}</p>

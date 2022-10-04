@@ -1,33 +1,51 @@
-import React, {Fragment} from 'react'
+import React, {Fragment, useState} from 'react'
 import styled from 'styled-components';
-type Props = {}
+import styles from '../../styles/Main.module.scss'
+import {TabsWrapper, TabSapn, Line} from './styles'
+import {Tab1, Tab2, Tab3} from './TabsContent'
+import Program from './Program';
+type IState = {
+    tab:{
+      id: number; 
+    name: string; 
+    title: string;  
+    img: string; 
+    time: string; 
+    roomNumber: string; 
+    description:string;
+    }[] 
+}
 
-const TabsWrapper = styled.div`
-  display: flex; 
-  gap: 30px;
-  background-color: #f8f8f8;
-  margin: 0;
-`;
-const TabSapn = styled.span`
-  padding: 10px 0;
-  font-weight: 400; 
-  font-size: 16px;
-  color: #3a3939;
-`;
-const Line = styled.div`
-  background-color: #585656;
-  height: 1px;
-  width: 100%;
-  `;
-export default function Tabs({}: Props) {
+
+export default function Tabs({IState}: Props) {
+  const [tab, setTab] = useState<IState["tab"]>(Tab1); 
+  
+  const switchTab = (Tab) => {
+    setTab(Tab);
+  }
   return (
     <Fragment>
-        <TabsWrapper>
-            <TabSapn>First Day</TabSapn>
-            <TabSapn>Second Day</TabSapn>
-            <TabSapn>Third Day</TabSapn>
+        <TabsWrapper className={styles.tabsWrapper}>
+            <TabSapn onClick={() =>switchTab(Tab1)} className={styles.tabSapn}>First Day</TabSapn>
+            <TabSapn onClick={() =>switchTab(Tab2)} className={styles.tabSapn}>Second Day</TabSapn>
+            <TabSapn onClick={() =>switchTab(Tab3)} className={styles.tabSapn}>Third Day</TabSapn>
         </TabsWrapper>
-        <Line/>
+        <Line className={styles.line}/>
+        {
+          tab === Tab2 ? 
+          Tab2.map((item) => ( 
+            <Program {...item} key={item.id} /> 
+          ))
+          : 
+          tab === Tab3 ? 
+          Tab3.map((item) => ( 
+            <Program {...item} key={item.id} /> 
+          ))
+          : 
+            Tab1.map((item) => ( 
+            <Program {...item} key={item.id} /> 
+          ))
+        }
     </Fragment>
   )
 }
