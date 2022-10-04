@@ -6,7 +6,7 @@ import {AiOutlineClockCircle} from 'react-icons/ai'
 import {BiMap} from 'react-icons/bi'
 import {faClock} from '@fortawesome/free-solid-svg-icons'; */
 import Program from './Program';
-import {OurProgramData} from './OurProgramData'
+import {OurProgramData} from './TabsContent'
 import Tabs from './Tabs'
 type IState = {
     programs:{

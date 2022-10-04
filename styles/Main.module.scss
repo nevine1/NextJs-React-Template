@@ -111,22 +111,12 @@ $blackColor: #222;
             height: 300px;
             .speakerContent{
                 background-color: #fff; 
-                padding: 20px; 
+                padding: 10px; 
                 margin: 10px; 
                 
             }
         }
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        height: 300px;
-        .speakerContent{
-            background-color: #fff; 
-            padding: 20px; 
-            margin: 10px; 
-            
-        }
+        
     }
 }
 
@@ -135,7 +125,7 @@ $blackColor: #222;
 .programsWrapper{
     
     padding: 30px 80px;
-    width: 100%;
+    width: 60%;
     .programsTitle{
         font-size: 30px;
         span{

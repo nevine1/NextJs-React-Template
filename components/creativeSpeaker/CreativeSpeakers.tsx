@@ -25,8 +25,8 @@ export default function creativeSpeakers({IState}: Props): ReactElement {
         <Fragment>
             <div className={styles.creativeSpeakers}>
                 <Swiper 
-                    spaceBetween={30}
-                    slidesPerView={4}
+                    spaceBetween={25}
+                    slidesPerView={5}
                     autoplay={{
                     delay: 2000,
                     disableOnInteraction: false,

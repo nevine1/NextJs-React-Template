@@ -5,16 +5,20 @@ type Props = {}
 const TabsWrapper = styled.div`
   display: flex; 
   gap: 30px;
-  background-color: pink;
+  background-color: #f8f8f8;
   margin: 0;
-
 `;
 const TabSapn = styled.span`
-  padding: 20px 10px;
+  padding: 10px 0;
   font-weight: 400; 
   font-size: 16px;
-  color: #6b6969;
+  color: #3a3939;
 `;
+const Line = styled.div`
+  background-color: #585656;
+  height: 1px;
+  width: 100%;
+  `;
 export default function Tabs({}: Props) {
   return (
     <Fragment>
@@ -22,8 +26,8 @@ export default function Tabs({}: Props) {
             <TabSapn>First Day</TabSapn>
             <TabSapn>Second Day</TabSapn>
             <TabSapn>Third Day</TabSapn>
-          
         </TabsWrapper>
+        <Line/>
     </Fragment>
   )
 }

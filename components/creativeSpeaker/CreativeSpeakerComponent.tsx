@@ -13,7 +13,7 @@ export default function CreativeSpeakerComponent({img, id, title, name}: Props):
         <Fragment>
             <div className={styles.speakerContent}>
                 <div>
-                    <Image loader={()=>img}  width={150} height={150} src={img} alt={name}/>
+                    <Image   width={150} height={150} src={img} alt={name}/>
                 </div>
                 <h2>{name}</h2>
                 <p>{title}</p>

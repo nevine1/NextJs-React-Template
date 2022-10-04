@@ -22,7 +22,7 @@ export default function Program({id, roomNumber, name, title, time, img, descrip
         <Fragment>
             <div className={styles.programCount}>
                 <div >
-                    <Image src={img} loader={() =>img}   width={170} height={170} alt="image 1" className={styles.programImage}/>
+                    <Image src={img}     alt="image 1" className={styles.programImage}/>
                 </div>
                 <div className={styles.programsContent}>
                 <div className={styles.iconWrapper}>
