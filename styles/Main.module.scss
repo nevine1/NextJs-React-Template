@@ -139,8 +139,8 @@ $blackColor: #222;
     .tabs{
         .tabsWrapper{
             margin: 5px 0; 
-            background-color:pink;
-            padding: 5px 0; 
+           
+            //padding: 5px 0; 
             display: flex; 
             gap: 30px;
             .tabSapn{
@@ -151,18 +151,47 @@ $blackColor: #222;
         .line{ 
             height: 1px; 
             width: 100%;
+            background-color: #949393;
             
         }
         .programsMainContent{
-            margin: 20px 0;
+            margin: 10px 0;
             display: flex;
+            padding: 20px 0;
+
             .programImgDiv{
                 padding-right: 20px;
                 .programImage{
-                    width: 150px;
-                    height: 150px;
+                    
                     border-radius: 50%;
 
+                }
+            }
+            .programsContent{
+                padding: 0 10px;
+                .iconWrapper{
+                    font-size: 12px;
+                    color:#707070;
+                    padding-right: 10px;
+                }
+                .programHeading{
+                    font-weight: 500;
+                    font-size:25px;
+                    color:#3a3939b3;
+                    
+                }
+                .programName{
+                    font-size: 14px;
+                    font-weight: 400; 
+                    color:#949393;
+                    padding-bottom: 10px;
+                }
+                .programDesc{
+                    font-size: 14px;
+                    font-weight: 400; 
+                    color:#949393;
+                    padding-bottom: 10px;
+                    padding-top:10px;
                 }
             }
         }

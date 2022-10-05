@@ -22,20 +22,20 @@ export default function Program({id, roomNumber, name, title, time, img, descrip
         <Fragment>
             <div className={styles.programsMainContent}>
                 <div className={styles.programImgDiv}>
-                    <Image src={img} width={150} height={150}     alt="image 1" className={styles.programImage}/>
+                    <Image src={img} width={180} height={180} alt={name} className={styles.programImage}/>
                 </div>
                 <div className={styles.programsContent}>
                     <div className={styles.iconWrapper}>
                         <span>
-                            <AiOutlineClockCircle /> {time}
+                            <AiOutlineClockCircle className={styles.programTime}/> {time}
                         </span>
                         <span>
                             <BiMap/>Room {roomNumber}
                         </span>
                     </div>
                     <h2 className={styles.programHeading}>{title} </h2>
-                    <span>{name}</span>
-                    <p>{description}</p>
+                    <span className={styles.programName}>{name}</span>
+                    <p className={styles.programDesc}>{description}</p>
                 </div>
             </div>
         </Fragment>

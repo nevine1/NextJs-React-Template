@@ -7,28 +7,38 @@ import Program from './Program';
 type IState = {
     tab:{
       id: number; 
-    name: string; 
-    title: string;  
-    img: string; 
-    time: string; 
-    roomNumber: string; 
-    description:string;
-    }[] 
+      name: string; 
+      title: string;  
+      img: string; 
+      time: string; 
+      roomNumber: string; 
+      description:string;
+      color: string;
+      }[] 
 }
 
 
 export default function Tabs({IState}: Props) {
   const [tab, setTab] = useState<IState["tab"]>(Tab1); 
-  
-  const switchTab = (Tab) => {
-    setTab(Tab);
+  const [color, setColor] = useState<string>('red');
+  const switchTab = (tab) => {
+    setTab(tab);
   }
   return (
     <Fragment>
         <TabsWrapper className={styles.tabsWrapper}>
-            <TabSapn onClick={() =>switchTab(Tab1)} className={styles.tabSapn}>First Day</TabSapn>
-            <TabSapn onClick={() =>switchTab(Tab2)} className={styles.tabSapn}>Second Day</TabSapn>
-            <TabSapn onClick={() =>switchTab(Tab3)} className={styles.tabSapn}>Third Day</TabSapn>
+            <TabSapn onClick={() =>switchTab(Tab1)} className={styles.tabSapn}
+              style={{color: tab === Tab1 ? '#f2545f' : '',fontWeight: tab === Tab1 ? 'bold' : ''}}
+              >First Day</TabSapn>
+
+            <TabSapn onClick={() =>switchTab(Tab2)} className={styles.tabSapn}
+              style={{color: tab === Tab2 ? '#f2545f' : '', fontWeight: tab === Tab2 ? 'bold' : ''}}
+              >Second Day</TabSapn>
+
+            <TabSapn onClick={() =>switchTab(Tab3)} className={styles.tabSapn}
+              style={{color: tab === Tab3 ? '#f2545f' : '', fontWeight: tab === Tab3 ? 'bold' : ''}}
+              >Third Day</TabSapn>
+
         </TabsWrapper>
         <Line className={styles.line}/>
         {

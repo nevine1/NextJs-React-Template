@@ -6,13 +6,11 @@ export const TabsWrapper = styled.div`
 `;
 export const TabSapn = styled.span`
   padding: 5px 0;
-  font-weight: 400; 
+  font-weight: 300; 
   font-size:19px;
+  margin: 0;
 `;
 export const Line = styled.div`
-  background-color: #858383;
   padding: 0; 
   margin:0;
-  height: 1px;
-  
   `;
