@@ -230,3 +230,48 @@ $blackColor: #222;
    
     }
 }
+
+/*=========================    register form ===============================*/
+.formWrapper{
+    height: 500px;
+    background-color: rgb(53, 52, 52);
+    color: #fff;
+    margin: 0; 
+    padding:50px  80px;
+    display : flex; 
+    gap: 80; 
+    .formText{
+        font-size: 26px;
+        .formTitle{
+        
+            .formSpan{
+                color: $primaryColor; 
+            }
+        }
+        .formText1{
+            font-size: 16px; 
+            padding: 20px 0;
+        }
+        .formText2{
+            font-size: 14px; 
+            color: rgb(189, 187, 187);
+        }
+    }
+    .regsiterForm{
+        form{
+            width: 100%;
+            input{
+                margin-bottom: 10px;
+            }
+            .error{
+                font-size: 12px;
+                color: $primaryColor;
+                margin-bottom: 10px;
+                padding-top: 0;
+                margin-top: 0;
+            }
+        }
+    }
+    
+
+}

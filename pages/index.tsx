@@ -8,7 +8,7 @@ import About from '../components/about'
 import OverviewSection from '../components/overView/OverViewSection'
 import CreativeSpeakerWrapper from '../components/creativeSpeaker/CreativeSpeakerWrapper';
 import OurProgramsWrapper from '../components/ourPrograms/OurProgramsWrapper'
-
+import RegisterFormContent from '../components/registerForm/RegisterFormContent'
 const Home: NextPage = () => {
   return (
     <Fragment>  
@@ -17,6 +17,7 @@ const Home: NextPage = () => {
       <OverviewSection />
       <CreativeSpeakerWrapper/>
       <OurProgramsWrapper />
+      <RegisterFormContent />
     </Fragment>
     
   )
